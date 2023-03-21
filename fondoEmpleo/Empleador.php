@@ -19,7 +19,7 @@
 
         <?php
         // Conecta con la base de datos y obtiene los datos de la tabla
-        include_once 'db.php';
+        /*include_once 'db.php';
 
         $result = mysqli_query($conn, "SELECT * FROM usuarios");
 
@@ -39,22 +39,53 @@
 
         // Cierra la conexión
         mysqli_close($conn);
-        ?>
+        */?>
 
+
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <!-- Incluye los archivos JS de jQuery, Bootstrap 5 y DataTables -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/dt-1.11.3/datatables.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        /*$(document).ready(function() {
             // Inicializa la DataTable con las opciones de configuración
             $('#myTable').DataTable({
                 "language": {
                     "url": "//cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Spanish.json"
                 }
             });
-        });
+        });*/
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
